@@ -1,0 +1,154 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\mdr42\\Downloads\\AUA_WebApi_DotNet6_V1.1 (2)\\AUA_WebApi_DotNet6_V1.1\\AUA.ProjectName.DomainEntities\\AUA.ProjectName.DomainEntities.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\mdr42\\Downloads\\AUA_WebApi_DotNet6_V1.1 (2)\\AUA_WebApi_DotNet6_V1.1\\AUA.ProjectName.Common\\AUA.ProjectName.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mdr42\\Downloads\\AUA_WebApi_DotNet6_V1.1 (2)\\AUA_WebApi_DotNet6_V1.1\\AUA.ProjectName.Common\\AUA.ProjectName.Common.csproj",
+        "projectName": "AUA.ProjectName.Common",
+        "projectPath": "C:\\Users\\mdr42\\Downloads\\AUA_WebApi_DotNet6_V1.1 (2)\\AUA_WebApi_DotNet6_V1.1\\AUA.ProjectName.Common\\AUA.ProjectName.Common.csproj",
+        "packagesPath": "C:\\Users\\mdr42\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mdr42\\Downloads\\AUA_WebApi_DotNet6_V1.1 (2)\\AUA_WebApi_DotNet6_V1.1\\AUA.ProjectName.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Users\\mdr42\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mdr42\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mdr42\\AppData\\Roaming\\NuGet\\config\\Godot.Offline.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\mdr42\\Downloads\\AUA_WebApi_DotNet6_V1.1 (2)\\AUA_WebApi_DotNet6_V1.1\\AUA.ProjectName.DomainEntities\\AUA.ProjectName.DomainEntities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\mdr42\\Downloads\\AUA_WebApi_DotNet6_V1.1 (2)\\AUA_WebApi_DotNet6_V1.1\\AUA.ProjectName.DomainEntities\\AUA.ProjectName.DomainEntities.csproj",
+        "projectName": "AUA.ProjectName.DomainEntities",
+        "projectPath": "C:\\Users\\mdr42\\Downloads\\AUA_WebApi_DotNet6_V1.1 (2)\\AUA_WebApi_DotNet6_V1.1\\AUA.ProjectName.DomainEntities\\AUA.ProjectName.DomainEntities.csproj",
+        "packagesPath": "C:\\Users\\mdr42\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mdr42\\Downloads\\AUA_WebApi_DotNet6_V1.1 (2)\\AUA_WebApi_DotNet6_V1.1\\AUA.ProjectName.DomainEntities\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Users\\mdr42\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder",
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\mdr42\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mdr42\\AppData\\Roaming\\NuGet\\config\\Godot.Offline.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\mdr42\\Downloads\\AUA_WebApi_DotNet6_V1.1 (2)\\AUA_WebApi_DotNet6_V1.1\\AUA.ProjectName.Common\\AUA.ProjectName.Common.csproj": {
+                "projectPath": "C:\\Users\\mdr42\\Downloads\\AUA_WebApi_DotNet6_V1.1 (2)\\AUA_WebApi_DotNet6_V1.1\\AUA.ProjectName.Common\\AUA.ProjectName.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

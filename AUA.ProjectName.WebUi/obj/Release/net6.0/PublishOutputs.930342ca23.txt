@@ -1,0 +1,1 @@
+C:\Users\mdr42\Downloads\AUA_WebApi_DotNet6_V1.1 (2)\AUA_WebApi_DotNet6_V1.1\AUA.ProjectName.WebUi\obj\Release\net6.0\browser-wasm\PubTmp\Out\web.config

@@ -1,0 +1,31 @@
+﻿@page "/Login"
+<PageTitle>Login</PageTitle>
+
+<div class="content">
+    <div class="row">
+        <div class="col-6">
+            <div class="card">
+                <div class="card-header">
+                    <h1 class="title text-center mt-3">Login</h1>
+                </div>
+                <div class="card-body">
+                    <CustomEditForm Model="@_loginVm" SubmitMethod="LoginAsync">
+                        <Body>
+                            <div>
+                                <label>UserName: </label>
+                                <InputText @bind-Value="_loginVm.UserName" class="form-control"/>
+                                <br />
+                            </div>
+
+                            <div>
+                                <label>Password: </label>
+                                <InputText @bind-Value="_loginVm.Password" type="password" class="form-control" />
+                                <br />
+                            </div>
+                        </Body>
+                    </CustomEditForm>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

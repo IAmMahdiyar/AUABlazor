@@ -1,0 +1,39 @@
+﻿@attribute [Authorize]
+@page "/Roles/Update/{RoleId:int}"
+
+<AuthorizeView Policy="@AppConsts.UserAccessAuthorize" Resource="SecurityHelper.CreateUserAccesses(EUserAccess.UserRole)">
+    <LayoutView Layout="typeof(AdminLayout)">
+        <div class="content">
+            <AdminCard>
+                <Header><h5>Update Role</h5></Header>
+                <Body>
+                <CustomEditForm SubmitMethod="UpdateAsync" Model="@_roleDto">
+                    <Body>
+                    <div class="row">
+                        <div class="col-md-5 pr-1">
+                            <div class="form-group">
+                                <label>Title: </label>
+                                <InputText @bind-Value="_roleDto.Title" type="text" class="form-control"/>
+                            </div>
+                        </div>
+                        <div class="col-md-5 pl-1">
+                            <div class="form-group">
+                                <label>Description:</label>
+                                <InputText @bind-Value="_roleDto.Description" type="text" class="form-control"/>
+                            </div>
+                        </div>
+                        <div style="display: flex; justify-content: center; flex-direction: column;" class="col-md-2 pl-1">
+                            <div>
+                                <label>IsActive: </label>
+                                <InputCheckbox style="display: inline-block; vertical-align: bottom" @bind-Value="_roleDto.IsActive" class="form-check mr-1"/>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="btn btn-success" href="/Roles">Back</a>
+                    </Body>
+                </CustomEditForm>
+                </Body>
+            </AdminCard>
+        </div>
+    </LayoutView>
+</AuthorizeView>

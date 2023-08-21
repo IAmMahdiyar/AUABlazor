@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\mdr42\Downloads\AUA_WebApi_DotNet6_V1.1 (2)\AUA_WebApi_DotNet6_V1.1\AUA.ProjectName.WebApi\bin\Release\net6.0\publish\</_PublishTargetUrl>
+    <History>True|2023-08-20T20:37:03.4188916Z;False|2023-08-21T00:06:42.5669818+03:30;True|2023-08-20T23:42:27.0785346+03:30;True|2023-08-20T23:07:35.3003640+03:30;False|2023-08-20T23:06:59.0144282+03:30;True|2023-08-20T19:01:52.2934724+03:30;True|2023-08-19T08:17:19.2037664+03:30;True|2023-08-19T07:48:33.0563560+03:30;True|2023-08-19T04:59:57.9759053+03:30;True|2023-08-16T20:39:00.5311446+03:30;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

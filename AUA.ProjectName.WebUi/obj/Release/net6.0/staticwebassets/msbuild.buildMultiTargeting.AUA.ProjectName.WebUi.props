@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AUA.ProjectName.WebUi.props" />
+</Project>

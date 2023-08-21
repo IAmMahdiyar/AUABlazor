@@ -1,0 +1,54 @@
+﻿<div class="sidebar" data-color="orange">
+    <div class="logo">
+        <a href="https://auaframework.com" class="simple-text logo-normal text-center">
+           AUA
+        </a>
+    </div>
+    <div class="sidebar-wrapper" id="sidebar-wrapper">
+        <ul class="nav">
+            <li class="nav-item @GetActive("", NavLinkMatch.All)">
+                <NavLink href="/">
+                    <i class="now-ui-icons users_single-02"></i>
+                    <p>Profile</p>
+                </NavLink>
+            </li>
+            
+            <li class="nav-item @GetActive("Users")">
+                <NavLink href="Users">
+                    <i class="now-ui-icons business_badge "></i>
+                    <p>Users</p>
+                </NavLink>
+            </li>
+            
+            <li class="nav-item @GetActive("Roles")">
+                <NavLink href="Roles">
+                    <i class="oi oi-briefcase "></i>
+                    <p>Roles</p>
+                </NavLink>
+            </li>
+            
+            <li class="nav-item @GetActive("Permission")">
+                <NavLink href="Permission">
+                    <i class="oi oi-lock-locked "></i>
+                    <p>Permission</p>
+                </NavLink>
+            </li>
+        </ul>
+    </div>
+</div>
+
+@code {
+
+    [Inject]
+    NavigationManager NavigationManager { get; set; }
+
+    protected override void OnInitialized() => NavigationManager.LocationChanged += (s, e) => StateHasChanged();
+
+    bool IsActive(string href, NavLinkMatch navLinkMatch = NavLinkMatch.Prefix)
+    {
+        var relativePath = NavigationManager.ToBaseRelativePath(NavigationManager.Uri).ToLower();
+        return navLinkMatch == NavLinkMatch.All ? relativePath == href.ToLower() : relativePath.StartsWith(href.ToLower());
+    }
+
+    string GetActive(string href, NavLinkMatch navLinkMatch = NavLinkMatch.Prefix) => IsActive(href, navLinkMatch) ? "active" : "";
+}

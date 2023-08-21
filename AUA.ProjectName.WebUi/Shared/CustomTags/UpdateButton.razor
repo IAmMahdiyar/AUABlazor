@@ -1,0 +1,3 @@
+﻿@using AUA.ProjectName.WebUi.Utility
+
+<button @onclick="@(async () =>await JsRuntime.ConfirmUpdate(DotNetObjectReference.Create(this)))" class="@Class">@ButtonText</button>

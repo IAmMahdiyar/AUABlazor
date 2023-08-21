@@ -1,0 +1,64 @@
+﻿@page "/Users"
+@attribute [Authorize]
+
+<PageTitle>Users</PageTitle>
+
+<AuthorizeView Policy="@AppConsts.UserAccessAuthorize" Resource="SecurityHelper.CreateUserAccesses(EUserAccess.AppUser)">
+    <LayoutView Layout="typeof(AdminLayout)">
+        <div class="content">
+            <AdminCard>
+                <Header>
+                    <h5 style="display: inline-block" class="title">Users </h5>
+                    @if (_appUserDtos == null)
+                    {
+                        <div style="vertical-align: top;" class="spinner-border text-primary ml-2" role="status">
+                            <span class="sr-only"></span>
+                        </div>
+                    }
+                </Header>
+
+                <Body>
+                    @if (_appUserDtos != null)
+                    {
+                        <a class="btn btn-success mt-2 mb-3" href="/Users/Insert">Add User</a>
+                        <DataTable>
+                            <Head>
+                            <tr>
+                                <th>Full Name</th>
+                                <th>User Name</th>
+                                <th>Is Active</th>
+                                <th>Operations</th>
+                            </tr>
+                            </Head>
+                            <Body>
+                                @foreach (var user in _appUserDtos)
+                                {
+                                <tr>
+                                    <td>@user.FullName</td>
+                                    <td>@user.UserName</td>
+                                    <td>
+                                            @if (user.IsActive)
+                                            {
+                                                <i class="oi oi-circle-check text-success"></i>
+                                            }
+                                            else
+                                            {
+                                                <i class="oi oi-circle-x text-primary"></i>
+                                            }
+                                    </td>
+                                    <td>
+                                        <DetailsButton Details="@(GetDetails(GetAppUserDtoById(user.Id)))"></DetailsButton>
+                                        <a class="btn btn-secondary" href="/Users/Roles/@user.Id">Roles</a>
+                                        <a class="btn btn-warning" href="/Users/Update/@user.Id">Update</a>
+                                        <DeleteButton DeleteMethod="@(() => DeleteAsync(user.Id))"></DeleteButton>
+                                    </td>
+                                </tr>
+                                }
+                    </Body>
+                    </DataTable>
+                    }
+                </Body>
+            </AdminCard>
+        </div>
+    </LayoutView>
+</AuthorizeView>

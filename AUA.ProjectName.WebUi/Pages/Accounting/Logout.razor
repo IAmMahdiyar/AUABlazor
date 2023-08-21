@@ -1,0 +1,13 @@
+﻿@page "/logout"
+@using AUA.ProjectName.WebUi.Utility
+@inject CustomAuthenticationStateProvider StateProvider;
+@inject NavigationManager NavigationManager;
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        await StateProvider.LogoutAsync();
+        NavigationManager.NavigateTo("/login");
+    }
+
+}

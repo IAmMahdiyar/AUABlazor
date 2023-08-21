@@ -1,0 +1,60 @@
+﻿@page "/Roles"
+<PageTitle>Roles</PageTitle>
+
+<AuthorizeView Policy="@AppConsts.UserAccessAuthorize" Resource="SecurityHelper.CreateUserAccesses(EUserAccess.UserRole)">
+<LayoutView Layout="typeof(AdminLayout)">
+    <div class="content">
+        <AdminCard>
+            <Header>
+                <h5 style="display: inline-block" class="title">Roles </h5>
+                @if (_roleDtos == null)
+                {
+                    <div style="vertical-align: top;" class="spinner-border text-primary ml-2" role="status">
+                        <span class="sr-only"></span>
+                    </div>
+                }
+            </Header>
+
+            <Body>
+            @if (_roleDtos != null)
+            {
+                        <a class="btn btn-success mt-2 mb-3" href="/Roles/Insert">Add Role</a>
+                <DataTable>
+                    <Head>
+                        <tr>
+                            <th>Title</th>
+                            <th>Is Active</th>
+                            <th>Operations</th>
+                        </tr>
+                    </Head>
+                    <Body>
+                    @foreach (var role in _roleDtos)
+                    {
+                        <tr>
+                            <td>@role.Title</td>
+                            <td>
+                                @if (role.IsActive)
+                                {
+                                    <i class="oi oi-circle-check text-success"></i>
+                                }
+                                else
+                                {
+                                    <i class="oi oi-circle-x text-primary"></i>
+                                }
+                            </td>
+                            <td>
+                                <DetailsButton Details="@(GetDetails(GetRoleDtoById(role.Id)))"></DetailsButton>
+                                <a class="btn btn-secondary" href="/Roles/Accesses/@role.Id">Accesses</a>
+                                <a class="btn btn-warning" href="/Roles/Update/@role.Id">Update</a>
+                                <DeleteButton DeleteMethod="@(() => DeleteAsync(role.Id))"></DeleteButton>
+                            </td>
+                        </tr>
+                    }
+                    </Body>
+                </DataTable>
+            }
+            </Body>
+        </AdminCard>
+    </div>
+</LayoutView>
+</AuthorizeView>

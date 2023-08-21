@@ -1,0 +1,23 @@
+﻿<div class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card p-3">
+                <div class="card-header">
+                    @Header
+                </div>
+                <div class="card-body">
+                    @Body
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code
+{
+    [Parameter]
+    public RenderFragment Header { get; set; }
+    
+    [Parameter]
+    public RenderFragment Body { get; set; }
+}

@@ -1,0 +1,17 @@
+﻿@inherits EditForm
+
+<EditForm Model="EditContext.Model" OnValidSubmit="@(async () => await SubmitAsync())">
+    <DataAnnotationsValidator />
+
+    <ValidationSummary />
+    
+    @Body
+
+    <button class="btn btn-primary submit" type="submit">
+        <span style="display: none" class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+        <span style="display: none" class="sr-only">Loading...</span>
+        <span>Submit</span>
+    </button>
+
+</EditForm>
+

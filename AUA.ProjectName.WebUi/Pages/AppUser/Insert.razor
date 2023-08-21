@@ -1,0 +1,67 @@
+﻿@page "/Users/Insert";
+@attribute [Authorize]
+
+<PageTitle>Add User</PageTitle>
+
+<AuthorizeView Policy="@AppConsts.UserAccessAuthorize" Resource="SecurityHelper.CreateUserAccesses(EUserAccess.AppUser)">
+    <LayoutView Layout="typeof(AdminLayout)">
+        <AdminCard>
+            <Header><h5 class="title">Add User </h5></Header>
+            <Body>
+                <CustomEditForm SubmitMethod="InsertAsync" Model="@_appUserDto">
+                    <Body>
+                        <div class="row">
+                            <div class="col-md-5 pr-1">
+                                <div class="form-group">
+                                    <label>First Name:</label>
+                                    <InputText @bind-Value="_appUserDto.FirstName" type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-md-5 pl-1">
+                                <div class="form-group">
+                                    <label>Last Name:</label>
+                                    <InputText @bind-Value="_appUserDto.LastName" type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div style="display: flex; justify-content: center; flex-direction: column;" class="col-md-2 pl-1">
+                                <div>
+                                    <label>IsActive: </label>
+                                    <InputCheckbox style="display: inline-block; vertical-align: bottom" @bind-Value="_appUserDto.IsActive" class="form-check mr-1" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 pr-3">
+                                <div class="form-group">
+                                    <label>User Name:</label>
+                                    <InputText @bind-Value="_appUserDto.UserName" type="text" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-md-4 pl-1">
+                                <div class="form-group">
+                                    <label>Email:</label>
+                                    <InputText @bind-Value="_appUserDto.Email" type="email" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-md-4 pl-1">
+                                <div class="form-group">
+                                    <label>Phone:</label>
+                                    <InputText @bind-Value="_appUserDto.Phone" type="phone" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 pr-3">
+                                <div class="form-group">
+                                    <label>Password:</label>
+                                    <InputText @bind-Value="_appUserDto.Password" type="password" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <a class="btn btn-success" href="/Users">Back</a>
+                    </Body>
+                </CustomEditForm>
+            </Body>
+        </AdminCard>
+    </LayoutView>
+</AuthorizeView>

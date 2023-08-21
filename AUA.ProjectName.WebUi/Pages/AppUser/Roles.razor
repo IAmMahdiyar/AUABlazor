@@ -1,0 +1,69 @@
+﻿@page "/Users/Roles/{UserId:long}"
+@attribute [Authorize]
+
+<PageTitle>Users</PageTitle>
+
+<AuthorizeView Policy="@AppConsts.UserAccessAuthorize" Resource="SecurityHelper.CreateUserAccesses(EUserAccess.AppUser)">
+    <LayoutView Layout="typeof(AdminLayout)">
+        <div class="content">
+            <AdminCard>
+
+                <Header>
+                    <h5 style="display: inline-block" class="title">User Roles</h5>
+                    @if (_roles == null && _userRoles == null)
+                    {
+                        <div style="vertical-align: top;" class="spinner-border text-primary ml-2" role="status">
+                            <span class="sr-only"></span>
+                        </div>
+                    }
+                </Header>
+
+                <Body>
+                    @if (_roles != null && _userRoles != null)
+                    {
+                        <a class="btn btn-success mt-2 mb-3" href="/Users">Back</a>
+                        <DataTable>
+                            <Head>
+                            <tr>
+                                <td>Role Title</td>
+                                <td>Role Assigned</td>
+                                <td>Operations</td>
+                            </tr>
+                            </Head>
+                            <Body>
+                                @foreach (var role in _roles)
+                                {
+                                <tr>
+                                    <td>@role.Title</td>
+                                    <td>
+                                        @if (_userRoles.Any(p => p.RoleId == role.Id))
+                                        {
+                                            <i class="oi oi-circle-check text-success"></i>
+                                        }
+                                        else
+                                        {
+                                            <i class="oi oi-circle-x text-primary"></i>
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (_userRoles.Any(p => p.RoleId == role.Id))
+                                        {
+                                            <UpdateButton Class="btn btn-primary" ButtonText="Dismiss" UpdateMethod="@(async () => await DismissAsync(role.Id))" />
+                                            }
+                                        else
+                                        {
+                                            <UpdateButton Class="btn btn-success" ButtonText="Assign" UpdateMethod="@(async () => await AssignAsync(role.Id))" />
+                                        }
+                                    </td>
+                                </tr>
+                                }
+                    </Body>
+                    </DataTable>
+                    }
+                </Body>
+
+
+            </AdminCard>
+        </div>
+    </LayoutView>
+</AuthorizeView>

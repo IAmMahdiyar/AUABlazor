@@ -1,0 +1,19 @@
+﻿<Router AppAssembly="@typeof(App).Assembly">
+    <Found Context="routeData">
+        <AuthorizeRouteView RouteData="@routeData">
+            <Authorizing>
+                <LoggingIn />
+            </Authorizing>
+            <NotAuthorized>
+                <YouAreNotAuthorized></YouAreNotAuthorized>
+            </NotAuthorized>
+        </AuthorizeRouteView>
+        <FocusOnNavigate RouteData="@routeData" Selector="h1" />
+    </Found>
+    <NotFound>
+        <PageTitle>Not found</PageTitle>
+        <LayoutView Layout="@typeof(AdminLayout)">
+            <PageNotFound></PageNotFound>
+        </LayoutView>
+    </NotFound>
+</Router>

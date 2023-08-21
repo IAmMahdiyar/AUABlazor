@@ -1,0 +1,129 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = AUA.ProjectName.WebUi
+build_property.RootNamespace = AUA.ProjectName.WebUi
+build_property.ProjectDir = C:\Users\mdr42\Downloads\AUA_WebApi_DotNet6_V1.1 (2)\AUA_WebApi_DotNet6_V1.1\AUA.ProjectName.WebUi\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\mdr42\Downloads\AUA_WebApi_DotNet6_V1.1 (2)\AUA_WebApi_DotNet6_V1.1\AUA.ProjectName.WebUi
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Pages/Accounting/ChangePassword.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudGluZ1xDaGFuZ2VQYXNzd29yZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Pages/Accounting/EditProfile.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudGluZ1xFZGl0UHJvZmlsZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Pages/Accounting/Logout.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudGluZ1xMb2dvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Pages/Accounting/Profile.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudGluZ1xQcm9maWxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Pages/AppUser/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwVXNlclxJbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Pages/AppUser/Insert.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwVXNlclxJbnNlcnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Pages/AppUser/Roles.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwVXNlclxSb2xlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Pages/AppUser/Update.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXBwVXNlclxVcGRhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Pages/Roles/Access.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9sZXNcQWNjZXNzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Pages/Roles/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9sZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Pages/Roles/Insert.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9sZXNcSW5zZXJ0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Pages/Roles/Update.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUm9sZXNcVXBkYXRlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Shared/AdminTopBar.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEFkbWluVG9wQmFyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Shared/CustomTags/CustomEditForm.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEN1c3RvbVRhZ3NcQ3VzdG9tRWRpdEZvcm0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Shared/CustomTags/DataTable.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEN1c3RvbVRhZ3NcRGF0YVRhYmxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Shared/CustomTags/DeleteButton.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEN1c3RvbVRhZ3NcRGVsZXRlQnV0dG9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Shared/CustomTags/DetailsButton.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEN1c3RvbVRhZ3NcRGV0YWlsc0J1dHRvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Shared/CustomTags/UpdateButton.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEN1c3RvbVRhZ3NcVXBkYXRlQnV0dG9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Shared/Static/AdminCard.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN0YXRpY1xBZG1pbkNhcmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Shared/Static/LoggingIn.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN0YXRpY1xMb2dnaW5nSW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Shared/Static/PageNotFound.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN0YXRpY1xQYWdlTm90Rm91bmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Shared/Static/YouAreNotAuthorized.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN0YXRpY1xZb3VBcmVOb3RBdXRob3JpemVkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Pages/Accounting/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudGluZ1xMb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-f9wi094tfq
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Shared/AdminLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEFkbWluTGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-j8q5qaa7nh
+
+[C:/Users/mdr42/Downloads/AUA_WebApi_DotNet6_V1.1 (2)/AUA_WebApi_DotNet6_V1.1/AUA.ProjectName.WebUi/Shared/AdminLeftBar.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEFkbWluTGVmdEJhci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-bpelm3r947

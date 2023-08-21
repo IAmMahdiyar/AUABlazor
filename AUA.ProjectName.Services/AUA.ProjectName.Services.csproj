@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="BusinessService\**" />
+    <EmbeddedResource Remove="BusinessService\**" />
+    <None Remove="BusinessService\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="6.0.21" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.15" />
+    <PackageReference Include="Microsoft.JSInterop" Version="6.0.21" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AUA.ProjectName.DataLayer\AUA.ProjectName.DataLayer.csproj" />
+    <ProjectReference Include="..\AUA.ProjectName.InMemoryServices\AUA.ProjectName.InMemoryServices.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="AUA.Mapping">
+      <HintPath>..\AUACore\AUA.Mapping.dll</HintPath>
+    </Reference>
+    <Reference Include="AUA.ServiceInfrastructure">
+      <HintPath>..\AUACore\AUA.ServiceInfrastructure.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
