@@ -4,6 +4,9 @@ using AUA.ProjectName.ValidationServices.Accounting.LoginModelValidations.Contra
 using AUA.ProjectName.ValidationServices.Accounting.LoginModelValidations.Services;
 using AUA.ProjectName.ValidationServices.Accounting.RoleValidation.Contracts;
 using AUA.ProjectName.ValidationServices.Accounting.RoleValidation.Services;
+using AUA.ProjectName.ValidationServices.Accounting.UserAccessValidations.Contracts;
+using AUA.ProjectName.ValidationServices.Accounting.UserAccessValidations.Services;
+using AUA.ProjectName.ValidationServices.Accounting.UserRole.Contracts;
 
 namespace AUA.ProjectName.WebApi.RegistrationServices
 {
@@ -26,6 +29,8 @@ namespace AUA.ProjectName.WebApi.RegistrationServices
             services.AddScoped<IRoleInsertValidationService, RoleInsertValidationService>();
             services.AddScoped<IRoleUpdateValidationService, RoleUpdateValidationService>();
             services.AddScoped<IRoleDeleteValidationService, RoleDeleteValidationService>();
+            services.AddScoped<IUserAccessDtoInsertValidationService, UserAccessDtoInsertValidationService>();
+            services.AddScoped<IUserAccessDtoUpdateValidationService, UserAccessDtoUpdateValidationService>();
         }
 
 

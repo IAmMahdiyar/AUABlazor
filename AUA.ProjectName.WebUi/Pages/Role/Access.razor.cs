@@ -3,13 +3,12 @@ using AUA.ProjectName.Common.Extensions;
 using AUA.ProjectName.Models.BaseModel.BaseViewModels;
 using AUA.ProjectName.Models.EntitiesDto.Accounting;
 using AUA.ProjectName.Models.ViewModels.Accounting.UserRoleAccessModels;
-using AUA.ProjectName.Models.ViewModels.Accounting.UserRoleModels;
 using AUA.ProjectName.Services.GeneralService.Http.Contracts;
 using AUA.ProjectName.WebUi.Utility;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 
-namespace AUA.ProjectName.WebUi.Pages.Roles
+namespace AUA.ProjectName.WebUi.Pages.Role
 {
     public partial class Access
     {

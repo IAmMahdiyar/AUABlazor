@@ -1,13 +1,16 @@
 ﻿using AUA.ProjectName.Common.Consts;
+using AUA.ProjectName.Common.Enums;
 using AUA.ProjectName.Models.BaseModel.BaseViewModels;
+using AUA.ProjectName.Models.EntitiesDto.Accounting;
 using AUA.ProjectName.Models.ListModes.Accounting.AppUserModels;
 using AUA.ProjectName.Models.ListModes.Accounting.RoleModels;
+using AUA.ProjectName.Models.ListModes.Accounting.UserAccessModels;
 using AUA.ProjectName.Services.GeneralService.Http.Contracts;
 using AUA.ProjectName.WebUi.Utility;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 
-namespace AUA.ProjectName.WebUi.Pages.Roles
+namespace AUA.ProjectName.WebUi.Pages.Access
 {
     public partial class Update
     {
@@ -16,9 +19,13 @@ namespace AUA.ProjectName.WebUi.Pages.Roles
         [Inject] public CustomAuthenticationStateProvider StateProvider { get; set; }
         [Inject] public NavigationManager NavigationManager { get; set; }
 
-        [Parameter] public int RoleId { get; set; }
+        [Parameter] public int AccessId { get; set; }
 
-        private RoleListDto _roleDto = new RoleListDto();
+        private UserAccessDto _accessDto = new UserAccessDto();
+
+        private SelectAccessParent _selectAccessParent;
+
+        private SelectUserAccess _selectUserAccess;
 
         protected override async Task OnInitializedAsync()
         {
@@ -26,14 +33,14 @@ namespace AUA.ProjectName.WebUi.Pages.Roles
 
             await JsRuntime.StartLoading();
 
-            await SetRoleDtoAsync();
+            await SetAccessDtoAsync();
         }
 
-        private async Task SetRoleDtoAsync()
+        private async Task SetAccessDtoAsync()
         {
-            var resultModel = await HttpService.PostAsync<ResultModel<ListResultVm<RoleListDto>>>(ApiUrlConsts.GetRoles, new AppUserSearchVm()
+            var resultModel = await HttpService.PostAsync<ResultModel<ListResultVm<UserAccessDto>>>(ApiUrlConsts.GetUserAccesses, new UserAccessSearchVm()
             {
-                Id = RoleId,
+                Id = AccessId,
                 PageSize = 1,
                 PageNumber = 1,
                 TotalSize = 1,
@@ -41,21 +48,35 @@ namespace AUA.ProjectName.WebUi.Pages.Roles
 
             if (await HttpService.IsValidAsync(JsRuntime, resultModel))
             {
-                _roleDto = resultModel.Result.ResultVms.First();
+                _accessDto = resultModel.Result.ResultVms.First();
                 await JsRuntime.StopLoading();
             }
         }
 
         private async Task UpdateAsync()
         {
-            var resultModel = await HttpService.PostAsync<ResultModel<object>>(ApiUrlConsts.UpdateRole, _roleDto);
+            SetUserAccess();
+
+            SetAccessParent();
+
+            var resultModel = await HttpService.PostAsync<ResultModel<object>>(ApiUrlConsts.UpdateUserAccess, _accessDto);
 
             if (await HttpService.IsValidAsync(JsRuntime, resultModel))
             {
                 await JsRuntime.SuccessMessage(MessageConsts.UpdateSuccess);
 
-                NavigationManager.NavigateTo("/Roles");
+                NavigationManager.NavigateTo("/Accesses");
             }
+        }
+
+        private void SetUserAccess()
+        {
+            _accessDto.AccessCode = (EUserAccess)_selectUserAccess.AccessCode;
+        }
+
+        private void SetAccessParent()
+        {
+            _accessDto.ParentId = _selectAccessParent.UserAccessDto.ParentId;
         }
     }
 }

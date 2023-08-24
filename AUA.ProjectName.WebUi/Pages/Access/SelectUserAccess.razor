@@ -1,0 +1,26 @@
+﻿@using Microsoft.AspNetCore.Components
+@using AUA.ProjectName.Common.Extensions
+@using AUA.ProjectName.Models.EntitiesDto.Accounting
+
+<InputSelect class="form-control" @bind-Value="AccessCode">
+    @foreach (var item in Enum.GetValues(typeof(EUserAccess)).Cast<EUserAccess>())
+    {
+        @if ((int)UserAccessDto.AccessCode == (int)item)
+        {
+            <option selected value="@item.GetId()">@item.ToDescription()</option>
+        }
+        else
+        {
+            <option value="@item.GetId()">@item.ToDescription()</option>
+        }
+
+    }
+</InputSelect>
+
+@code
+{
+    [Parameter]
+    public UserAccessDto UserAccessDto { get; set; }
+
+    public int AccessCode { get; set; }
+}

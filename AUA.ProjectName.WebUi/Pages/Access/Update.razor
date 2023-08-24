@@ -1,0 +1,73 @@
+﻿@attribute [Authorize]
+@page "/Accesses/Update/{AccessId:int}"
+
+<AuthorizeView Policy="@AppConsts.UserAccessAuthorize" Resource="SecurityHelper.CreateUserAccesses(EUserAccess.UserAccess)">
+    <LayoutView Layout="typeof(AdminLayout)">
+        <div class="content">
+            <AdminCard>
+                <Header><h5>Update Access</h5></Header>
+                <Body>
+                    <CustomEditForm SubmitMethod="UpdateAsync" Model="@_accessDto">
+                        <Body>
+                            <div class="row">
+                                <div class="col-md-5 pr-1">
+                                    <div class="form-group">
+                                        <label>Title: </label>
+                                        <InputText @bind-Value="_accessDto.Title" type="text" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="col-md-5 pl-1">
+                                    <div class="form-group">
+                                        <label>Page Title:</label>
+                                        <InputText @bind-Value="_accessDto.PageTitle" type="text" class="form-control" />
+                                    </div>
+                                </div>
+                                <div style="display: flex; justify-content: center; flex-direction: column;" class="col-md-2 pl-1">
+                                    <div>
+                                        <label>IsActive: </label>
+                                        <InputCheckbox style="display: inline-block; vertical-align: bottom" @bind-Value="_accessDto.IsActive" class="form-check mr-1" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5 pr-1">
+                                    <div class="form-group">
+                                        <label>Page Description:</label>
+                                        <InputText @bind-Value="_accessDto.PageDescription" type="text" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="col-md-5 pl-1">
+                                    <div class="form-group">
+                                        <label>Url:</label>
+                                        <InputText @bind-Value="_accessDto.Url" type="text" class="form-control" />
+                                    </div>
+                                </div>
+                                <div style="display: flex; justify-content: center; flex-direction: column;" class="col-md-2 pr-1">
+                                    <div>
+                                        <label>IsIndirect: </label>
+                                        <InputCheckbox style="display: inline-block; vertical-align: bottom" @bind-Value="_accessDto.IsIndirect" class="form-check mr-1" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 pr-1">
+                                    <div class="form-group">
+                                        <label>AccessCode:</label>
+                                        <SelectUserAccess UserAccessDto="_accessDto" @ref="_selectUserAccess"></SelectUserAccess>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 pl-1">
+                                    <div class="form-group">
+                                        <label>Parent:</label>
+                                        <SelectAccessParent @ref="_selectAccessParent" UserAccessDto="_accessDto"></SelectAccessParent>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn btn-success" href="/Accesses">Back</a>
+                        </Body>
+                    </CustomEditForm>
+                </Body>
+            </AdminCard>
+        </div>
+    </LayoutView>
+</AuthorizeView>

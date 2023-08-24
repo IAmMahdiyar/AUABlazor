@@ -21,6 +21,8 @@ namespace AUA.ProjectName.Services.ListService.Accounting.Services
             SetSearchVm(userAccessSearchVm);
 
             ApplyTitleFilter();
+            ApplyIdFilter();
+            ApplyPageTitleFilter();
             ApplyDescriptionFilter();
             ApplyIsActiveFilters();
             ApplyAccessCodeFilter();
@@ -35,6 +37,22 @@ namespace AUA.ProjectName.Services.ListService.Accounting.Services
                 return;
 
             Query = Query.Where(p => p.Title.Contains(SearchVm.Title));
+        }
+
+        private void ApplyIdFilter()
+        {
+            if (SearchVm.Id == 0 || SearchVm.Id == null)
+                return;
+
+            Query = Query.Where(p => p.Id == SearchVm.Id);
+        }
+
+        private void ApplyPageTitleFilter()
+        {
+            if (string.IsNullOrWhiteSpace(SearchVm.PageTitle))
+                return;
+
+            Query = Query.Where(p => p.PageTitle.Contains(SearchVm.PageTitle));
         }
 
         private void ApplyDescriptionFilter()

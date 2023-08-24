@@ -888,3 +888,15 @@ C:\Users\mdr42\Downloads\AUA_WebApi_DotNet6_V1.1 (2)\AUA_WebApi_DotNet6_V1.1\AUA
 C:\Users\mdr42\Downloads\AUA_WebApi_DotNet6_V1.1 (2)\AUA_WebApi_DotNet6_V1.1\AUA.ProjectName.WebApi\obj\Debug\net6.0\AUA.ProjectName.WebApi.pdb
 C:\Users\mdr42\Downloads\AUA_WebApi_DotNet6_V1.1 (2)\AUA_WebApi_DotNet6_V1.1\AUA.ProjectName.WebApi\obj\Debug\net6.0\AUA.ProjectName.WebApi.genruntimeconfig.cache
 C:\Users\mdr42\Downloads\AUA_WebApi_DotNet6_V1.1 (2)\AUA_WebApi_DotNet6_V1.1\AUA.ProjectName.WebApi\obj\Debug\net6.0\ref\AUA.ProjectName.WebApi.dll
+C:\Users\mdr42\Downloads\AUA_WebApi_DotNet6_V1.1 (2)\AUA_WebApi_DotNet6_V1.1\AUA.ProjectName.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\mdr42\Downloads\AUA_WebApi_DotNet6_V1.1 (2)\AUA_WebApi_DotNet6_V1.1\AUA.ProjectName.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Components.dll
+C:\Users\mdr42\Downloads\AUA_WebApi_DotNet6_V1.1 (2)\AUA_WebApi_DotNet6_V1.1\AUA.ProjectName.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Users\mdr42\Downloads\AUA_WebApi_DotNet6_V1.1 (2)\AUA_WebApi_DotNet6_V1.1\AUA.ProjectName.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\mdr42\Downloads\AUA_WebApi_DotNet6_V1.1 (2)\AUA_WebApi_DotNet6_V1.1\AUA.ProjectName.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\mdr42\Downloads\AUA_WebApi_DotNet6_V1.1 (2)\AUA_WebApi_DotNet6_V1.1\AUA.ProjectName.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Components.WebAssembly.dll
+C:\Users\mdr42\Downloads\AUA_WebApi_DotNet6_V1.1 (2)\AUA_WebApi_DotNet6_V1.1\AUA.ProjectName.WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\mdr42\Downloads\AUA_WebApi_DotNet6_V1.1 (2)\AUA_WebApi_DotNet6_V1.1\AUA.ProjectName.WebApi\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\mdr42\Downloads\AUA_WebApi_DotNet6_V1.1 (2)\AUA_WebApi_DotNet6_V1.1\AUA.ProjectName.WebApi\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\mdr42\Downloads\AUA_WebApi_DotNet6_V1.1 (2)\AUA_WebApi_DotNet6_V1.1\AUA.ProjectName.WebApi\bin\Debug\net6.0\Microsoft.JSInterop.dll
+C:\Users\mdr42\Downloads\AUA_WebApi_DotNet6_V1.1 (2)\AUA_WebApi_DotNet6_V1.1\AUA.ProjectName.WebApi\bin\Debug\net6.0\Microsoft.JSInterop.WebAssembly.dll
+C:\Users\mdr42\Downloads\AUA_WebApi_DotNet6_V1.1 (2)\AUA_WebApi_DotNet6_V1.1\AUA.ProjectName.WebApi\bin\Debug\net6.0\System.IO.Pipelines.dll

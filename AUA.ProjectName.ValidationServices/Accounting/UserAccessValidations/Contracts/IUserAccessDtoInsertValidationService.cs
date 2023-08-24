@@ -1,11 +1,10 @@
 ﻿using AUA.ProjectName.Models.BaseModel.BaseValidationModels;
-using AUA.ProjectName.Models.EntitiesDto.Accounting;
+using AUA.ProjectName.Models.ViewModels.Accounting.UserAccessModels;
 
 namespace AUA.ProjectName.ValidationServices.Accounting.UserAccessValidations.Contracts
 {
     public interface IUserAccessDtoInsertValidationService
     {
-        Task<ValidationResultVm> ValidationAsync(UserAccessDto appUserVm);
-
+        Task<ValidationResultVm> ValidationAsync(UserAccessInsertVm insertVm);
     }
 }

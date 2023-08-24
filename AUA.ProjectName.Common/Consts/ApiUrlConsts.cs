@@ -2,7 +2,7 @@
 {
     public static class ApiUrlConsts
     {
-        public static readonly string BaseUrl = "http://localhost:5032";
+        public static readonly string BaseUrl = "https://api.asanplay.com";
 
         public static readonly string Login = BaseUrl + @"/api/V1.0/Accounting/Login";
 
@@ -42,6 +42,14 @@
         
         public static readonly string InsertUserRoleAccess = BaseUrl + @"/api/V1.0/UserRoleAccess/InsertUserRoleAccess";
 
+        public static readonly string GetUserAccesses = BaseUrl + @"/api/V1.0/UserAccess/List";
+
+        public static readonly string InsertUserAccess = BaseUrl + @"/api/V1.0/UserAccess/Insert";
+
+        public static readonly string DeleteUserAccess = BaseUrl + @"/api/V1.0/UserAccess/Delete";
+
+        public static readonly string UpdateUserAccess = BaseUrl + @"/api/V1.0/UserAccess/Update";
+
         public static string DeleteRoleUrl(long roleId)
         {
             return DeleteRole + "?id=" + roleId;
@@ -61,6 +69,11 @@
         public static string GetUserAccessRoleByRoleIdUrl(int roleId)
         {
             return GetUserAccessRoleByRoleId + "?roleId=" + roleId;
+        }
+
+        public static string DeleteUserAccessUrl(long userAccessId)
+        {
+            return DeleteUserAccess + "?id=" + userAccessId;
         }
     }
 }

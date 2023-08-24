@@ -5,6 +5,10 @@ namespace AUA.ProjectName.Models.ListModes.Accounting.UserAccessModels
 {
     public class UserAccessSearchVm : BaseSearchVm
     {
+        public int? Id { get; set; }
+
+        public string? PageTitle { get; set; }
+
         public string? Title { get; set; }
 
         public EUserAccess AccessCode { get; set; }

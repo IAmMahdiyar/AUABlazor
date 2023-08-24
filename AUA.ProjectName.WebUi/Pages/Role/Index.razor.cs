@@ -6,7 +6,7 @@ using AUA.ProjectName.WebUi.Utility;
 using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 
-namespace AUA.ProjectName.WebUi.Pages.Roles
+namespace AUA.ProjectName.WebUi.Pages.Role
 {
     public partial class Index
     {

@@ -1,9 +1,7 @@
 ﻿@page "/"
-@using AUA.ProjectName.Common.Consts
-@using AUA.ProjectName.Common.Enums
-@using AUA.ProjectName.WebUi.Utility
-@using Microsoft.AspNetCore.Authorization
 @attribute [Authorize]
+
+<PageTitle>Profile</PageTitle>
 
 <AuthorizeView Policy="@AppConsts.UserAccessAuthorize" Resource="SecurityHelper.CreateUserAccesses(EUserAccess.AppUser)">
     <LayoutView Layout="typeof(AdminLayout)">

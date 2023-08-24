@@ -1,6 +1,8 @@
 ﻿using AUA.ProjectName.Common.Enums;
+using AUA.ProjectName.DomainEntities.Entities.Accounting;
 using AUA.ProjectName.Models.BaseModel.BaseValidationModels;
 using AUA.ProjectName.Models.EntitiesDto.Accounting;
+using AUA.ProjectName.Models.ViewModels.Accounting.UserAccessModels;
 using AUA.ProjectName.Services.EntitiesService.Accounting.Contracts;
 using AUA.ProjectName.ValidationServices.Accounting.UserAccessValidations.Contracts;
 using AUA.ProjectName.ValidationServices.BaseValidations;
@@ -10,7 +12,7 @@ namespace AUA.ProjectName.ValidationServices.Accounting.UserAccessValidations.Se
 {
     public class UserAccessDtoInsertValidationService : BaseValidationService, IUserAccessDtoInsertValidationService
     {
-        private UserAccessDto _userAccessDto;
+        private UserAccessInsertVm _userAccessDto;
         private readonly IUserAccessService _userAccessService;
 
 
@@ -19,9 +21,10 @@ namespace AUA.ProjectName.ValidationServices.Accounting.UserAccessValidations.Se
             _userAccessService = userAccessService;
         }
 
-        public async Task<ValidationResultVm> ValidationAsync(UserAccessDto appUserVm)
+
+        public async Task<ValidationResultVm> ValidationAsync(UserAccessInsertVm insertVm)
         {
-            _userAccessDto = appUserVm;
+            _userAccessDto = insertVm;
 
             await DoValidationAsync();
 

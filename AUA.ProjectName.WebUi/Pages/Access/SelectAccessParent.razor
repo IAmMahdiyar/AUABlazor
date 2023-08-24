@@ -1,0 +1,15 @@
+﻿<InputSelect @bind-Value="UserAccessDto.ParentId" class="form-control">
+    <option value="0">No Parent</option>
+
+    @foreach (var accessDto in _userAccessDtos)
+    {
+        @if (UserAccessDto.ParentId == accessDto.Id)
+        {
+            <option selected value="@accessDto.Id">@accessDto.Title</option>
+        }
+        else
+        {
+            <option value="@accessDto.Id">@accessDto.Title</option>
+        }
+    }
+</InputSelect>

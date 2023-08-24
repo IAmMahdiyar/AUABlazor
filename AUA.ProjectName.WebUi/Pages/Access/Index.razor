@@ -1,0 +1,70 @@
+﻿@page "/Accesses"
+<PageTitle>Accesses</PageTitle>
+
+<AuthorizeView Policy="@AppConsts.UserAccessAuthorize" Resource="SecurityHelper.CreateUserAccesses(EUserAccess.UserAccess)">
+    <LayoutView Layout="typeof(AdminLayout)">
+        <div class="content">
+            <AdminCard>
+                <Header>
+                    <h5 style="display: inline-block" class="title">Accesses </h5>
+                    @if (_accessDtos == null)
+                    {
+                        <div style="vertical-align: top;" class="spinner-border text-primary ml-2" role="status">
+                            <span class="sr-only"></span>
+                        </div>
+                    }
+                </Header>
+
+                <Body>
+                    @if (_accessDtos != null)
+                    {
+                        <a class="btn btn-success mt-2 mb-3" href="/Accesses/Insert">Add Access</a>
+                        <DataTable>
+                            <Head>
+                            <tr>
+                                <th>Title</th>
+                                <th>Is Active</th>
+                                <th>Parent</th>
+                                <th>Operations</th>
+                            </tr>
+                            </Head>
+                            <Body>
+                                @foreach (var access in _accessDtos)
+                                {
+                                <tr>
+                                    <td>@access.Title</td>
+                                    <td>
+                                            @if (access.IsActive)
+                                            {
+                                            <i class="oi oi-circle-check text-success"></i>
+                                            }
+                                            else
+                                            {
+                                            <i class="oi oi-circle-x text-primary"></i>
+                                            }
+                                    </td>
+                                    <td>
+                                            @if (GetParent(access.ParentId) == null)
+                                            {
+                                            <i class="oi oi-circle-x text-primary"></i>
+                                            }
+                                            else
+                                            {
+                                                @GetParent(access.ParentId)?.Title
+                                            }
+                                    </td>
+                                    <td>
+                                        <DetailsButton Details="@(GetDetails(GetAccessDtoById(access.Id)))"></DetailsButton>
+                                        <a class="btn btn-warning" href="/Accesses/Update/@access.Id">Update</a>
+                                        <DeleteButton DeleteMethod="@(() => DeleteAsync(access.Id))"></DeleteButton>
+                                    </td>
+                                </tr>
+                                }
+                    </Body>
+                    </DataTable>
+                    }
+                </Body>
+            </AdminCard>
+        </div>
+    </LayoutView>
+</AuthorizeView>

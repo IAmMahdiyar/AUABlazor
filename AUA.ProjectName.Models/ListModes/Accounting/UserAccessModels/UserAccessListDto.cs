@@ -5,6 +5,12 @@ namespace AUA.ProjectName.Models.ListModes.Accounting.UserAccessModels
 {
     public class UserAccessListDto : IMapFrom<UserAccess>
     {
+        public int? Id { get; set; }
+
+        public bool IsActive { get; set; }
+
+        public string? PageTitle { get; set; }
+
         public string? Title { get; set; }
 
         public int AccessCode { get; set; }
