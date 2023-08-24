@@ -1,31 +1,32 @@
 ﻿@page "/Login"
 <PageTitle>Login</PageTitle>
 
-<div class="content">
-    <div class="row">
-        <div class="col-6">
-            <div class="card">
-                <div class="card-header">
-                    <h1 class="title text-center mt-3">Login</h1>
+<div class="row">
+    <div class="col-sm-12 col-md-8 col-lg-7 col-xl-6 col-xxl-6">
+        <AdminCard>
+            <Header>
+                <h2 class="title text-center mt-3">Login</h2>
+                <div class="login-description">
+                    <p><a target="_blank" href="https://auaframework">AUA Framework</a> with <a target="_blank" href="https://blazor.net"> Blazor</a></p>
                 </div>
-                <div class="card-body">
-                    <CustomEditForm Model="@_loginVm" SubmitMethod="LoginAsync">
-                        <Body>
-                            <div>
-                                <label>UserName: </label>
-                                <InputText @bind-Value="_loginVm.UserName" class="form-control"/>
-                                <br />
-                            </div>
+            </Header>
+            <Body>
+                <CustomEditForm Model="@_loginVm" SubmitMethod="LoginAsync">
+                    <Body>
+                    <div>
+                        <label>UserName: </label>
+                        <InputText @bind-Value="_loginVm.UserName" class="form-control"/>
+                        <br/>
+                    </div>
 
-                            <div>
-                                <label>Password: </label>
-                                <InputText @bind-Value="_loginVm.Password" type="password" class="form-control" />
-                                <br />
-                            </div>
-                        </Body>
-                    </CustomEditForm>
-                </div>
-            </div>
-        </div>
+                    <div>
+                        <label>Password: </label>
+                        <InputText @bind-Value="_loginVm.Password" type="password" class="form-control"/>
+                        <br/>
+                    </div>
+                    </Body>
+                </CustomEditForm>
+            </Body>
+        </AdminCard>
     </div>
 </div>

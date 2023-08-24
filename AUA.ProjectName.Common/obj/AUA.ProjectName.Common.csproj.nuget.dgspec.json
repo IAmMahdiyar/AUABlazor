@@ -77,11 +77,6 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
-      },
-      "runtimes": {
-        "browser-wasm": {
-          "#import": []
-        }
       }
     }
   }

@@ -256,7 +256,7 @@
       "AUA.ProjectName.ValidationServices.dll": "sha256-VIibZz2lMgdb9b5YZCQq+by5\/lgDXirmwl7sHpiQUx0=",
       "AUA.ServiceInfrastructure.dll": "sha256-leJ+MM++oN5VXuDkzDDNZkWfdyidrXYuv8MBAOvBnpI=",
       "AUA.Mapping.dll": "sha256-Rl9lqpw3MbLnKdj+rcbRSREkR7d4kkS\/cpluw0ijDFw=",
-      "AUA.ProjectName.WebUi.dll": "sha256-jTNLTJJSo84israij1nF9mt4ee9sKFEUayvVg\/V7ils="
+      "AUA.ProjectName.WebUi.dll": "sha256-A6Jc7Cv8OfHrbhgN1\/QeVZ+S2twfSvfNIq1NKbbtjmM="
     },
     "extensions": null,
     "lazyAssembly": null,
@@ -270,7 +270,7 @@
       "AUA.ProjectName.ManualMapping.pdb": "sha256-TYtaOiKt\/\/gfIXGQB1lhgG+LK+yRUZpTkxMdyc5L1ZY=",
       "AUA.ProjectName.Models.pdb": "sha256-FmGQAVtuuZ7nlo0I0vntemE4w2Yi6MynEzwLFwHEK0U=",
       "AUA.ProjectName.Services.pdb": "sha256-Ly5dQkZdYuN+4Ji5LyXX0VeI9f\/QDmEw8Tc9wkyinGo=",
-      "AUA.ProjectName.WebUi.pdb": "sha256-w7uxCvKX+KfS5o9oGUfgovAsLHZdtpf\/d9s\/CFIGKmE="
+      "AUA.ProjectName.WebUi.pdb": "sha256-2UMt6u008o2j8j1KfoiFG3KDKiQ\/YSAejeuptEbTvgE="
     },
     "runtime": {
       "dotnet.6.0.16.fy2kjeycku.js": "sha256-GT2gK+GjOisRXJY+9yh6H8s6K\/KDIsaFMFIgWvAnttY=",

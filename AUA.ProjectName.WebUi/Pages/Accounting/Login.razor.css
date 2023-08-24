@@ -2,6 +2,7 @@
     justify-content: center;
 }
 
-.card {
-    border: 1px solid orangered;
+.login-description {
+    margin-top: -20px;
+    text-align: center;
 }

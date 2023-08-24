@@ -77,11 +77,6 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
-      },
-      "runtimes": {
-        "browser-wasm": {
-          "#import": []
-        }
       }
     },
     "C:\\Users\\mdr42\\Downloads\\AUA_WebApi_DotNet6_V1.1 (2)\\AUA_WebApi_DotNet6_V1.1\\AUA.ProjectName.DomainEntities\\AUA.ProjectName.DomainEntities.csproj": {
@@ -153,11 +148,6 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
-      },
-      "runtimes": {
-        "browser-wasm": {
-          "#import": []
-        }
       }
     },
     "C:\\Users\\mdr42\\Downloads\\AUA_WebApi_DotNet6_V1.1 (2)\\AUA_WebApi_DotNet6_V1.1\\AUA.ProjectName.InMemoryServices\\AUA.ProjectName.InMemoryServices.csproj": {
@@ -223,11 +213,6 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
-      },
-      "runtimes": {
-        "browser-wasm": {
-          "#import": []
-        }
       }
     },
     "C:\\Users\\mdr42\\Downloads\\AUA_WebApi_DotNet6_V1.1 (2)\\AUA_WebApi_DotNet6_V1.1\\AUA.ProjectName.ManualMapping\\AUA.ProjectName.ManualMapping.csproj": {
@@ -292,11 +277,6 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "browser-wasm": {
-          "#import": []
         }
       }
     },
@@ -372,11 +352,6 @@
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
-        }
-      },
-      "runtimes": {
-        "browser-wasm": {
-          "#import": []
         }
       }
     }
